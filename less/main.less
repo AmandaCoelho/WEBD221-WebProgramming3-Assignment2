@@ -1,0 +1,141 @@
+// **********Attributes**********
+
+@background:white;
+@navColor:#b62537;
+@headerFontColor:#2980b9;
+@images:"../images/background.jpg";
+@h2Color:#7f8c8d;
+
+
+// **********Font Stylings**********
+@font-face {
+    font-family: 'Montserrat';
+        src: url('../fonts/Montserrat-Regular.ttf');
+        src: url('../fonts/Montserrat-Regular.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+}
+
+@font-face{
+	font-family: 'Montserrat-Bold';
+        src: url('../fonts/Montserrat-Bold.ttf');
+        src: url('../fonts/Montserrat-Bold.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+}
+
+ // **********Main Stylings**********
+body{
+  background: url(@images);
+  font-family: Montserrat;
+}
+
+.pagewrap{
+	margin:3% auto;
+	background-color:@background;
+	width:1200px;
+	overflow:hidden;
+
+}
+
+
+// ********** Navigation Styling**********
+.nav{
+	margin:0 auto;
+	text-align: center;
+	background-color:@navColor;
+	width: 79%;
+	height: 30px;
+	a {
+		text-decoration: none;
+		color:@background;
+		font-size: 15px;
+		padding-top: 2%;
+		margin:1%;
+	}
+}
+
+
+// ********** Main Sidebar Content**********
+.sidebar{
+	display:inline-block;
+	margin-top: 3em;
+	margin-left: 8em;
+	width:25%;
+	float:left;
+	// border-bottom: 1px solid gray;
+	.information{
+		border-bottom: 1px solid gray;
+		img{
+			width:60%;
+		}
+		h2{
+			color:@headerFontColor;
+		}
+		.subInfo{
+			font-size: 1em;
+		}
+	}
+}
+
+
+// ********** Main Content Stylings **********
+.mainContent{
+	display:inline-block;
+	margin-top: 3em;
+	width:52%;
+	float:left;
+	p{
+		font-size: 1em;
+	}
+}
+
+article{
+	width:100%;
+	margin-left: 3%;
+	overflow:hidden;
+	margin-bottom: 2%;
+	h1{
+		font-family: Montserrat-Bold;
+		font-size: 3em;
+		line-height: 1px;
+		color:@navColor;
+	}
+	h3{
+		color:@navColor;
+		line-height: 1px;
+		font-size: 2em;
+	}
+}
+
+.highlightsContent{
+	width:100%;
+	img{
+		float:left;
+		max-width: 20%;
+		margin-right: 2%;
+		clear:both;
+	}
+	p{
+		overflow:auto;
+    	display:block;
+	}
+}
+
+
+// ********** Footer Stylings **********
+footer{
+	text-align: center;
+	h2{
+		font-size: 2em;
+	}
+	a{
+		color:@h2Color;
+		text-decoration: none;
+		margin-right: 2%;
+		font-size: 1em;
+	}
+	p{
+		font-size: 1.5em;
+	}
+}
