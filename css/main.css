@@ -28,12 +28,12 @@ body {
   background-color: #b62537;
   width: 79%;
   height: 30px;
+  padding-top: 2%;
 }
 .nav a {
   text-decoration: none;
   color: white;
   font-size: 15px;
-  padding-top: 2%;
   margin: 1%;
 }
 .sidebar {
