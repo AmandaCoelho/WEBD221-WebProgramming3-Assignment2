@@ -94,6 +94,12 @@ article h3 {
   overflow: auto;
   display: block;
 }
+.history {
+  width: 100%;
+}
+.history img {
+  max-width: 100%;
+}
 footer {
   text-align: center;
 }
